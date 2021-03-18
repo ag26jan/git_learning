@@ -1,0 +1,63 @@
+SUPPORT ENGINEER QUIZ
+
+This quiz consists of 9 questions of which the first 7 questions are technical.  Here are the ground rules:
+
+    * Note the time you started
+    * Don't take more than 60 minutes
+    * Try to keep your answers brief
+    * Just skip any questions that are in an unfamiliar area
+    * Note the time you finished
+
+Good Luck!
+
+START TIME
+1. Assume you have two tables in a relational database, one named BOOK    and one named AUTHOR.  There is a column in BOOK named author_id that references the AUTHOR table.  The idea here is that a single author may have written multiple books.  Write a SQL query that produces a result similar to this:
+
+      Author Name            Total number of books written
+      -----------            -----------------------------
+      Charles Dickens        23
+      Dr. Seuss              51
+      Norman Mailer          20
+      Harper Lee             1
+
+2. Describe the basic elements and goal of this query to a business user who doesn’t understand SQL.
+
+3. In the absence of a cost-based or statistics-based optimization do you think the following query will be performant? Explain your answer.
+	
+	SELECT * from SMALL_DIMENSION_TABLE small JOIN BIG_FACT_TABLE big ON small.x = big.x;
+
+
+4. Write a quick and dirty program (Shell, Python, Perl, Java, C++, or whatever) to produce a count of all the different "words" in a text file.  Use any definition of word that makes logical sense or makes your job easy.  The output might look like this:
+
+     17 a
+     14 the
+      9 of
+      9 in
+      8 com
+      7 you
+      7 that
+      7 snowflake
+      6 to
+      ...
+
+For this input file, the word "a" occured 17 times, "the" 14 times,   etc.
+
+
+
+5. Consider a system consisting of a series of modules that perform the following functions:
+Load data from external RDBMS’s and flat files on a daily basis (overnight) into the Snowflake data warehouse via a series of scheduled jobs
+Run jobs that joins data from different databases/schemas/tables and perform aggregations
+Deliver analytical reports to end users through either a web-based or desktop client.
+
+An end user calls you and tells you that no data is showing up in the report he looks at every day.  What steps would you take to diagnose his problem?  Feel free to make and state assumptions.
+
+You are tasked to load 1000 flat files each sized 5MB into a table in the Snowflake data warehouse and it needs to be loaded in the most expeditious way taking into consideration data size, warehouse size, and concurrency.  How would you design your data loading strategy?  
+Watch this video as a tip: https://www.youtube.com/watch?v=T2SsL5KbAJY&feature=youtu.be
+Feel free to make and state assumptions.
+
+You are trying to access a web resource-http://somehost.mydomain.com and are unable to reach the URL via a web browser from your home network.  However, when you are at your office network the URL is accessible.  List possible reasons why you would be unable to reach the resource from your home network. 
+
+Customer is unsatisfied with the investigation with current support engineer and has asked that this case be escalated. Ownership has been transferred to you for ongoing analysis and case management. Formulate communication to ease customer's temperature. 
+
+Customer solution has been provided by you (support engineer) to workaround a product defect. The workaround included in your solution is beyond satisfactory. However, the customer indicates engineering needs to re-prioritize this issue and provide an immediate fix. Engineering is guaranteeing a fix will be deployed at the end of the quarter. Formulate communication to address their business needs and closure of the investigation.
+
