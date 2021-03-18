@@ -17,3 +17,4 @@ if [ -f "$FILE" ] && { "$value" != "$md5sum" ; echo "$(date +%Y-%m-%d_%H%M) : th
     echo "These are the usernames of all users on this Linux system with their home directories.
 $USRHOMEDIR"
 fi
+#second commit testing
